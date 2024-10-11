@@ -11,35 +11,100 @@
 <body>
     <header>
         <div class="logo-nav-container">
-            <nav>Navbar</nav>
+            <img src="assets/header/logo.svg" alt="лого">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Menu</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#">Pricing</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <button id="toggle-sidebar" onclick=toggleSidebar()>Button</button>
+        <div class="header-button-container">
+            <input id="login-button" type="button" value="Login">
+            <input id="sign-button" type="button" value="Sign Up">
+        </div>
+        <button id="toggle-sidebar" onclick=toggleSidebar()><img src="assets/icon/menu.svg" alt="menu-button"></button>
     </header>
-    <aside id="sidebar">Sidebar</aside>
+    <aside id="sidebar">
+        <button id="toggle-sidebar-aside" onclick=toggleSidebar()><img src="assets/icon/close.svg" alt="close-button"></button>
+    </aside>
     <main>
-        <h1>Hello World</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta facilis iusto nam nisi omnis provident
-            ratione. Blanditiis debitis dolore eaque voluptatibus voluptatum. Aliquid animi aperiam architecto
-            consectetur consequatur dicta distinctio doloremque eligendi facere fugit labore laborum neque, perspiciatis
-            placeat praesentium quas ratione recusandae temporibus! Autem, distinctio expedita minus nemo odit quisquam
-            sit! A ab atque autem commodi culpa cum cupiditate deleniti deserunt dolor ea eius esse et exercitationem,
-            facilis hic id in maiores maxime mollitia nesciunt nostrum officia possimus praesentium quibusdam quo
-            recusandae repellat reprehenderit, sed suscipit ullam, vel veniam voluptate voluptatum. Blanditiis omnis
-            perferendis praesentium repellendus temporibus, unde vel velit? Aliquam amet assumenda deserunt illum in
-            ipsum labore nostrum perspiciatis quasi quidem. Eos impedit obcaecati repellendus sunt! Ad architecto error
-            est fugit harum laboriosam minus molestiae nam nobis nostrum officia, quo rerum totam unde vel voluptatem
-            voluptates! Consequuntur, dolores est laboriosam odio porro provident quidem unde. Autem commodi
-            consequuntur, dicta dolores earum eos fuga fugiat illum magni natus neque nihil pariatur quo saepe sint
-            veniam, vitae! Esse explicabo porro quos? Aliquid autem culpa cum cumque dicta dignissimos dolores
-            exercitationem facere harum incidunt inventore, iusto laboriosam laborum magni molestiae nemo, nulla omnis
-            placeat quasi repudiandae sint soluta tempora tenetur, ullam vel velit veniam vitae! Accusamus ad aliquam
-            aperiam autem dolor earum expedita facere harum, impedit iste magnam magni non nulla odio odit pariatur
-            placeat possimus praesentium quia repudiandae rerum suscipit ullam voluptatibus! Hic maiores suscipit totam
-            ullam? Accusantium, aut facilis nobis nulla placeat rem repellendus sed similique tempore totam ut
-            voluptatum. Alias amet assumenda autem culpa dicta fuga id illo illum laboriosam molestiae, nam natus non
-            pariatur quae, quaerat quos, repudiandae soluta vero vitae voluptate. Architecto, corporis cupiditate
-            deleniti enim error fugiat itaque iusto maxime minima molestiae nesciunt nostrum omnis perspiciatis quam
-            quasi quis repudiandae totam unde vel veniam voluptatum!</p>
+        <section class="initial-block">
+            <div class="enjoy-foods-container">
+                <h1>Header</h1>
+            </div>
+            <div class="decoration-container">
+                right
+            </div>
+        </section>
+        <section class="statistics-block">
+            <div class="box-1">
+                1
+            </div>
+            <div class="box-2">
+                2
+            </div>
+            <div class="box-3">
+                3
+            </div>
+        </section>
+        <section class="download-block">
+            <div class="smartphone-image-container">
+                left
+            </div>
+            <div class="premium-quality-container">
+                <h1>Header</h1>
+            </div>
+        </section>
+        <section class="top-restaurant-block">
+            <div class="top-restaurant-header-container">
+                <h1>Header</h1>
+            </div>
+            <div class="top-restaurants-container">
+                <div class="top-one-restaurant-container">
+                    1
+                </div>
+                <div class="top-two-restaurant-container">
+                    2
+                </div>
+                <div class="top-three-restaurant-container">
+                    3
+                </div>
+            </div>
+        </section>
+        <section class="top-dishes-block">
+            <div class="top-dishes-header-container">
+                <h1>Header</h1>
+            </div>
+            <div class="top-dishes-container">
+                <div class="top-one-dishes-container">
+                    1
+                </div>
+                <div class="top-two-dishes-container">
+                    2
+                </div>
+                <div class="top-three-dishes-container">
+                    3
+                </div>
+                <div class="top-four-dishes-container">
+                    4
+                </div>
+                <div class="top-five-dishes-container">
+                    5
+                </div>
+            </div>
+        </section>
+        <section class="control-purchases-block">
+            <div class="control-purchases-container">
+                <h1>Header</h1>
+            </div>
+            <div class="purchases-container">
+                right
+            </div>
+        </section>
+
     </main>
     <footer>Footer</footer>
     <script src="app.js"></script>

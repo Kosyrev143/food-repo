@@ -13,16 +13,63 @@ body{
     "footer sidebar";
 }
 header{
+    display: flex;
     top: 0;
     position: sticky;
     grid-area: header;
-    background-color: blue;
-    color: white;
-    padding: 2em 3em 1em 3em;
+    background-color: white;
+    color: #606060;
+    margin: 3em 5em 0;
+    padding: 0 0 2em 0;
     justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-weight: 550;
+    border-bottom: 2px #CBCBCB solid;
+}
+.logo-nav-container{
+    display: flex;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-left: 4em;
+}
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    padding: 0 2em;
+    list-style-type: none;
+}
+.nav-item a{
+    color: #606060;
+    text-decoration: none;
+}
+
+#login-button{
+    padding: 1em;
+    color: #606060;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+}
+#sign-button{
+    padding: 1em;
+    color: white;
+    background-color: #6C5FBC;
+    border: 0px solid;
+    border-radius: 15px;
+    font-weight: 600;
 }
 #toggle-sidebar{
     display: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: none
+}
+#toggle-sidebar-aside{
+    background-color: rgba(255, 255, 255, 0);
+    border: none
 }
 aside{
     top: 50px;
@@ -30,11 +77,75 @@ aside{
     position: sticky;
     align-self: start;
     grid-area: sidebar;
-    background-color: grey;
+
 
 }
 main{
     grid-area: main;
+    margin: 0 4em;
+    display: flex;
+    flex-direction: column;
+}
+.initial-block{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.statistics-block{
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.download-block{
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.top-restaurant-block{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    flex-wrap: wrap;
+}
+.top-restaurant-header-container{
+    display: flex;
+    justify-content: center;
+}
+.top-restaurants-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.top-dishes-block{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    flex-wrap: wrap;
+}
+.top-dishes-header-container{
+    display: flex;
+    justify-content: center;
+}
+.top-dishes-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.control-purchases-block{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 footer{
     grid-area: footer;
@@ -46,22 +157,45 @@ footer{
     body{
         grid-template-columns: 1fr;
     }
+    .top-restaurants-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .top-dishes-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     aside{
-        top: 68px;
-        height: calc(100vh - 68px);
+        top: 0;
+        height: 100vh;
         position: fixed;
         width: 300px;
-        display: none;
         right: 0;
+        background-color: #f9f9f9;
+        padding: 3em 3em 1em 1em;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end; /* Выравнивание содержимого по центру */
     }
     .show{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
     header{
         display: flex;
-
     }
     #toggle-sidebar{
         display: block;
+    }
+    nav{
+        display: none;
+    }
+    .header-button-container{
+        display: none;
     }
 }
