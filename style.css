@@ -12,21 +12,29 @@ body{
     "main sidebar"
     "footer sidebar";
 }
-header{
+header {
     display: flex;
     top: 0;
     position: sticky;
     grid-area: header;
     background-color: white;
     color: #606060;
-    margin: 3em 5em 0;
-    padding: 0 0 2em 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+header .container{
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: space-between; /* Выравнивание по горизонтали */
+    width: 100%;
+    margin: 0 5em;
+    padding: 2em 0; /* Достаточно отступов для внешнего вида */
     font-size: 13px;
     font-weight: 550;
     border-bottom: 2px #CBCBCB solid;
+    flex-wrap: nowrap; /* Предотвращаем перенос строк */
 }
+
 .logo-nav-container{
     display: flex;
 }
