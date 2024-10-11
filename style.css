@@ -28,7 +28,7 @@ header .container{
     justify-content: space-between; /* Выравнивание по горизонтали */
     width: 100%;
     margin: 0 5em;
-    padding: 2em 0; /* Достаточно отступов для внешнего вида */
+    padding: 3em 0 1em 0;  /* Достаточно отступов для внешнего вида */
     font-size: 13px;
     font-weight: 550;
     border-bottom: 2px #CBCBCB solid;
