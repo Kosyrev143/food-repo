@@ -327,6 +327,9 @@ footer{
         align-items: center;
         flex-wrap: wrap;
     }
+    .enjoy-foods-container{
+        padding: 2em 0;
+    }
     .estimation-container{
         display: flex;
         flex-direction: column;
