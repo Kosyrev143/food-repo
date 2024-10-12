@@ -7,12 +7,11 @@ body{
     display: grid;
     grid-template-columns: 1fr 0;
     grid-template-rows: auto 1fr auto;
+    background-color: #F9F9F9;
     grid-template-areas:
     "header header"
     "main sidebar"
     "footer sidebar";
-    background-color: #F9F9F9;
-
 }
 header {
     display: flex;
