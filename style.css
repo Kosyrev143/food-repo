@@ -113,6 +113,7 @@ main{
     row-gap: 1em;
     text-align: left;
     padding: 4em 0;
+    justify-content: space-evenly;
 }
 .enjoy-foods-container h1{
     color: #201F1F;
@@ -198,10 +199,34 @@ main{
 .statistics-block{
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    background-image: url("assets/statistics-block/background-statistics.svg");
     color: white;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 4em 10em;
+    background-size: cover;
+}
+.box-1,
+.box-2,
+.box-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-2{
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    padding: 0 4em;
+
+}
+.head-statistic{
+    font-size: 43px;
+    color: white;
+}
+.second-text-statistics{
+    font-size: 14px;
+    color: #C5BFED;
 }
 .download-block{
     display: flex;
@@ -254,6 +279,15 @@ footer{
     background-color: black;
     color: white;
     padding: 2em;
+}
+@media(max-width: 1450px){
+    .statistics-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-2{
+        border: none;
+    }
 }
 @media(max-width: 1200px){
     .decoration-container img{
