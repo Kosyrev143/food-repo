@@ -255,7 +255,6 @@ main{
     display: flex;
     padding: 15em 0;
     width: 50%;
-
     flex-direction: column;
     justify-content: space-between;
 }
@@ -291,6 +290,30 @@ main{
     background-color: green;
     flex-wrap: wrap;
     margin: 0 4em;
+    padding: 3em;
+    gap: 40px;
+}
+.top-one-restaurant-container{
+    background-color: #F4F4F6;
+    border: none;
+    border-radius: 15px;
+}
+.top-one-restaurant-container img{
+    object-fit: cover;
+    width: 100%;
+}
+.healthy-mini-block,
+.top-one-restaurant-container h2
+{
+    margin: 0 2em;
+}
+.top-restaurant-block h1{
+    color: #201F1F;
+    font-size: 75px;
+}
+.top-restaurant-block h1 span{
+    color: #5C4EAE;
+    font-size: 75px;
 }
 .top-restaurant-header-container{
     display: flex;
