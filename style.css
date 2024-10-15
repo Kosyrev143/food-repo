@@ -287,26 +287,14 @@ main{
 .top-restaurant-block{
     display: flex;
     flex-direction: column;
-    background-color: green;
+    background-color: #F9F9F9;
     flex-wrap: wrap;
     margin: 0 4em;
     padding: 3em;
     gap: 40px;
 }
-.top-one-restaurant-container{
-    background-color: #F4F4F6;
-    border: none;
-    border-radius: 15px;
-}
-.top-one-restaurant-container img{
-    object-fit: cover;
-    width: 100%;
-}
-.healthy-mini-block,
-.top-one-restaurant-container h2
-{
-    margin: 0 2em;
-}
+
+
 .top-restaurant-block h1{
     color: #201F1F;
     font-size: 75px;
@@ -323,7 +311,56 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 3em 4em;
+    gap: 3em;
+    overflow: hidden;
+}
+.top-one-restaurant-container,
+.top-two-restaurant-container,
+.top-three-restaurant-container{
+    display: flex;
+    flex-direction: column;
+    width: 395px;
+    height: 297px;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow: 10px 40px 15px rgba(0, 0, 0, 0.18);
+}
+
+.image-top-container{
+    height: 60%;
+    background-image: url("assets/top-restaurants-block/chicken-image-2.0.png");
+    background-size: 100% auto;
+    width: 100%;
+}
+.text-top-container{
+    height: 40%;
+    padding: 1em 2em;
+}
+.yellow-block {
+    background-color: #F7EDD0;
+    color: #DAA31A;
+    padding: 1em;
+    font-size: 12px;
+    border-radius: 7px;
+    width: 3em;
+}
+.red-block {
+    background-color: #F7C5BA;
+    color: #FB471D;
+    padding: 1em;
+    font-size: 12px;
+    border-radius: 7px;
+    width: 4em;
+}
+.view-all-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 4em;
+    font-size: 20px;
+    color: #ACADB9;
+    gap: 20px;
 }
 .top-dishes-block{
     display: flex;
@@ -377,12 +414,12 @@ footer{
     }
     .premium-quality-container h1{
         color: #201F1F;
-        font-size: 35px;
+        font-size: 46px;
         text-align: left;
 
     }
     .premium-quality-container h1 span{
-        font-size: 35px;
+        font-size: 46px;
         color: #5C4EAE;
     }
     .premium-quality-container{
@@ -391,6 +428,14 @@ footer{
         width: 50%;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .top-restaurant-block h1{
+        color: #201F1F;
+        font-size: 46px;
+    }
+    .top-restaurant-block h1 span{
+        color: #5C4EAE;
+        font-size: 46px;
     }
 }
 @media(max-width: 900px){
