@@ -55,6 +55,16 @@ nav{
     color: #606060;
     text-decoration: none;
 }
+#menu-item a {
+    color: #6C5FBC;
+}
+#menu-item a:hover {
+    color: #c2b63e;
+}
+.nav-item a:hover{
+    color: #c2b63e;
+    text-decoration: overline rgba(96, 96, 96, 0.46);
+}
 
 #login-button{
 
@@ -62,12 +72,19 @@ nav{
 .white-button{
     padding: 1em;
     color: #606060;
-    background-color: white;
+    background-color: #F9F9F9;
     border: none;
+    cursor: pointer;
     font-weight: 600;
-}
-#sign-button{
 
+}
+#sign-button:hover{
+    background-color: #F9F9F9;
+    color: #606060;
+    border: 0.5px solid #6C5FBC;
+}
+#login-button:hover{
+    color: #c2b63e;
 }
 .purple-button{
     padding: 1em;
@@ -75,6 +92,7 @@ nav{
     background-color: #6C5FBC;
     border: 0px solid;
     border-radius: 15px;
+    cursor: pointer;
     font-weight: 600;
 }
 #toggle-sidebar{
@@ -357,7 +375,7 @@ main{
     height: 297px;
     background-color: white;
     border-radius: 35px;
-    box-shadow: 10px 40px 15px rgba(0, 0, 0, 0.18);
+    box-shadow: 10px 40px 15px rgba(110, 110, 110, 0.09);
     overflow: hidden;
 }
 .top-one-dishes-container,
@@ -371,7 +389,7 @@ main{
     height: 297px;
     background-color: white;
     border-radius: 35px;
-    box-shadow: 10px 40px 15px rgba(0, 0, 0, 0.18);
+    box-shadow: 10px 40px 15px rgba(110, 110, 110, 0.09);
     overflow: hidden;
 }
 .image-top-container{
@@ -408,6 +426,14 @@ main{
 .red-block {
     background-color: #F7C5BA;
     color: #FB471D;
+    padding: 1em;
+    font-size: 12px;
+    border-radius: 7px;
+    width: 4em;
+}
+.green-block {
+    background-color: rgba(51, 172, 100, 0.44);
+    color: #309D5B;
     padding: 1em;
     font-size: 12px;
     border-radius: 7px;
@@ -526,7 +552,7 @@ footer{
         height: 197px;
         background-color: white;
         border-radius: 35px;
-        box-shadow: 10px 40px 15px rgba(0, 0, 0, 0.18);
+        box-shadow: 10px 40px 15px rgba(110, 110, 110, 0.09);
         overflow: hidden;
     }
     .top-one-dishes-container,
@@ -540,7 +566,7 @@ footer{
         height: 197px;
         background-color: white;
         border-radius: 35px;
-        box-shadow: 10px 40px 15px rgba(0, 0, 0, 0.18);
+        box-shadow: 10px 40px 15px rgba(110, 110, 110, 0.09);
         overflow: hidden;
     }
 }
