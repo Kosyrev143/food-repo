@@ -260,6 +260,7 @@ main{
     background-color: #F9F9F9;
     flex-wrap: wrap;
     margin: 0 4em;
+    border-bottom: 2px #CBCBCB solid;
 }
 .smartphone-image-container{
     display: flex;
@@ -312,6 +313,7 @@ main{
     margin: 0 4em;
     padding: 3em 0;
     gap: 40px;
+    border-bottom: 2px #CBCBCB solid;
 }
 
 
@@ -331,6 +333,7 @@ main{
     margin: 0 4em;
     padding: 3em 0;
     gap: 40px;
+    border-bottom: 2px #CBCBCB solid;
 }
 
 
