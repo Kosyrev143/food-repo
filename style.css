@@ -469,6 +469,7 @@ main{
     flex-wrap: wrap;
     margin: 0 4em;
     padding: 4em 0;
+    border-bottom: 2px #CBCBCB solid;
 }
 
 .control-purchases-container{
@@ -540,7 +541,7 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.15);
     color: white;
     padding: 2em;
 }
@@ -747,12 +748,6 @@ footer{
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .top-dishes-container{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
     aside{
         top: 0;
         height: 100vh;
@@ -770,6 +765,18 @@ footer{
     }
     header{
         display: flex;
+    }
+    header .container{
+        display: flex;
+        align-items: center; /* Выравнивание по вертикали */
+        justify-content: space-between; /* Выравнивание по горизонтали */
+        width: 100%;
+        margin: 0 1em;
+        padding: 3em 0 1em 0;  /* Достаточно отступов для внешнего вида */
+        font-size: 13px;
+        font-weight: 550;
+        border-bottom: 2px #CBCBCB solid;
+        flex-wrap: nowrap; /* Предотвращаем перенос строк */
     }
     #toggle-sidebar{
         display: block;
@@ -807,6 +814,7 @@ footer{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin: 0 1em;
     }
     .enjoy-foods-container{
         padding: 2em 0;
@@ -843,7 +851,7 @@ footer{
         flex-direction: column;
         background-color: #F9F9F9;
         flex-wrap: wrap;
-        margin: 0 4em;
+        margin: 0 1em;
         align-items: center;
         justify-content: space-between;
 
@@ -902,6 +910,13 @@ footer{
         color: #5C4EAE;
         font-size: 25px;
     }
+    .top-restaurant-block{
+        margin: 0 1em;
+    }
+
+    .top-dishes-block{
+        margin: 0 1em;
+    }
     .top-dishes-container{
         display: flex;
         flex-direction: column;
@@ -935,6 +950,9 @@ footer{
     }
     .view-all-container img{
         height: 15px;
+    }
+    .control-purchases-block{
+        margin: 0 1em;
     }
     .control-purchases-container h1{
         font-size: 30px;
