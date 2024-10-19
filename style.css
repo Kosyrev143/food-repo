@@ -538,6 +538,76 @@ main{
     display: flex;
     width: 50%;
 }
+.purchases-container .container{
+    width: 100%;
+    padding: 2em;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.purchases-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ .purchases-head h2{
+    font-size: 30px;
+}
+.select-box{
+    padding: 1em;
+    border: none;
+    background-color: #FAFAFA;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.card-one-container,
+.card-two-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em;
+}
+.card-one-container::before{
+    margin-right: 1em;
+    content: url("assets/control-purchases-block/koshel-icon.svg");
+
+}
+.card-two-container::before{
+    margin-right: 1em;
+    content: url("assets/control-purchases-block/green-icon.svg");
+
+}
+.purple-line {
+    width: 100%;
+}
+.expense-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: auto;
+}
+.card-one,
+.card-two{
+    height: 50%;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.expense-header{
+
+}
 
 footer{
     grid-area: footer;
