@@ -486,11 +486,11 @@ main{
 .control-purchases-container h1 span{
     color: #6C5FBC;
 }
-.dashboard-container{
+.dashboard-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    width: 70%;
 }
 .dashboard-one,
 .dashboard-two,
@@ -539,7 +539,6 @@ main{
     width: 50%;
 }
 .purchases-container .container{
-    width: 100%;
     padding: 2em;
     background-color: white;
     border-radius: 25px;
@@ -553,7 +552,7 @@ main{
     justify-content: space-between;
     align-items: center;
 }
- .purchases-head h2{
+.purchases-head h2{
     font-size: 30px;
 }
 .select-box{
@@ -577,6 +576,11 @@ main{
     align-items: center;
     padding: 0.3em;
 }
+.card-one-container .price,
+.card-two-container .price{
+    font-size: 21px;
+    font-weight: 700;
+}
 .card-one-container::before{
     margin-right: 1em;
     content: url("assets/control-purchases-block/koshel-icon.svg");
@@ -585,9 +589,11 @@ main{
 .card-two-container::before{
     margin-right: 1em;
     content: url("assets/control-purchases-block/green-icon.svg");
-
 }
 .purple-line {
+    width: 100%;
+}
+.purple-line img{
     width: 100%;
 }
 .expense-header{
@@ -605,9 +611,6 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
-.expense-header{
-
-}
 
 footer{
     grid-area: footer;
@@ -616,6 +619,11 @@ footer{
     padding: 2em;
 }
 
+@media (min-width: 901px) {
+    .purchases-container .container{
+        width: 100%;
+    }
+}
 @media(max-width: 1450px){
     .statistics-block{
         display: flex;
@@ -794,17 +802,83 @@ footer{
         display: flex;
         flex-direction: column;
         background-color: #F9F9F9;
+        align-items: center;
         margin: 0 4em;
+        gap: 30px;
         padding: 4em 0;
     }
     .control-purchases-container{
         display: flex;
+        align-items: center;
+        align-content: center;
         flex-direction: column;
         justify-content: space-between;
-        text-align: left;
         gap: 30px;
         width: 100%;
+        text-align: center;
     }
+    .purchases-head h2{
+        font-size: 26px;
+    }
+
+    .expense-header h3{
+        font-size: 14px;
+    }
+    .expense-header p{
+        font-size: 12px;
+    }
+    .card-one-container .price,
+    .card-two-container .price{
+        font-size: 14px;
+    }
+    .card-one-container::before{
+        margin-right: 1em;
+        content: url("assets/control-purchases-block/koshel-icon.svg");
+
+    }
+    .card-two-container::before{
+        margin-right: 1em;
+        content: url("assets/control-purchases-block/green-icon.svg");
+    }
+    .purchases-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 60%;
+    }
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+    }
+
+    .control-purchases-container{
+        width: 100%;
+    }
+    .card-one-container::before {
+        content: '';
+        display: inline-block;
+        margin-right: 1em;
+        width: 35px; /* Устанавливаем ширину изображения */
+        height: 35px; /* Устанавливаем высоту изображения */
+        background-image: url("assets/control-purchases-block/koshel-icon.svg");
+        background-size: contain; /* Уменьшает или увеличивает изображение, сохраняя его пропорции */
+        background-repeat: no-repeat; /* Отключаем повторение изображения */
+    }
+
+    .card-two-container::before {
+        content: '';
+        display: inline-block;
+        margin-right: 1em;
+        width: 35px;
+        height: 35px;
+        background-image: url("assets/control-purchases-block/green-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
 }
 
 
@@ -1027,10 +1101,9 @@ footer{
     .control-purchases-container h1{
         font-size: 30px;
     }
-    .dashboard-one ,
-    .dashboard-two ,
-    .dashboard-three {
-        width: 100%;
+    .dashboard-container {
+        width: auto;
+        width: auto;
     }
     .dashboard-one img,
     .dashboard-two img,
@@ -1051,6 +1124,28 @@ footer{
     }
     .time-container{
         font-size: 8px;
+    }
+    .select-box{
+        font-size: 12px;
+    }
+    .purchases-head h2{
+        font-size: 20px;
+    }
+    .purchases-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expense-header h3{
+        font-size: 11px;
+    }
+    .expense-header p{
+        font-size: 7px;
+    }
+    .card-one-container .price,
+    .card-two-container .price{
+        font-size: 11px;
     }
 
 
